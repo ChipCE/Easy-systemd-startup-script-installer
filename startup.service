@@ -1,7 +1,8 @@
 [Unit]
 Description=Run custom script at startup
+Requires=mdmonitor.service local-fs.target
 #After=network.target systemd-user-sessions.service network-online.target
-After=syslog.target network.target rpcbind.service
+After=syslog.target network.target rpcbind.service local-fs.target mdmonitor.service
 
 
 [Service]
