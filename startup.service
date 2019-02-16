@@ -10,6 +10,7 @@ After=syslog.target network.target rpcbind.service local-fs.target mdmonitor.ser
 User=root
 Type=simple
 ExecStart=/usr/local/bin/startup.sh
+ExecStopPost=/usr/local/bin/stop.sh
 
 [Install]
 WantedBy=default.target

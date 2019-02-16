@@ -25,5 +25,7 @@ echo "Remove /etc/systemd/system/startup.service ."
 rm -f /etc/systemd/system/startup.service
 echo "Remove /usr/local/bin/startup.sh ."
 rm -f /usr/local/bin/startup.sh
+echo "Remove /usr/local/bin/stop.sh ."
+rm -f /usr/local/bin/stop.sh
 
 echo "Done!"

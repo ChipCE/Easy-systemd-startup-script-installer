@@ -20,10 +20,13 @@ echo "Copy startup.service to /etc/systemd/system/startup.service ."
 yes | cp -rf startup.service /etc/systemd/system/startup.service
 echo "Copy startup.sh to /usr/local/bin/startup.sh ."
 yes | cp -rf startup.sh /usr/local/bin/startup.sh
+echo "Copy stop.sh to /usr/local/bin/stop.sh ."
+yes | cp -rf stop.sh /usr/local/bin/stop.sh
 
 echo "Rum chmod ..."
 chmod 664 /etc/systemd/system/startup.service
 chmod 774 /usr/local/bin/startup.sh
+chmod 774 /usr/local/bin/stop.sh
 
 echo "Enable service ..."
 systemctl enable startup
