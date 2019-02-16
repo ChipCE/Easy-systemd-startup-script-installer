@@ -9,7 +9,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-read -p "This script will install startup.service into /etc/systemd/system and startup.sh into /usr/local/bin , is that okay ? y/n : " uConfirm
+read -p "This script will install startup.service into /etc/systemd/system and startup.sh and stop.sh into /usr/local/bin , is that okay ? y/n : " uConfirm
 echo ""
 if [ "$uConfirm" != "y" ]; then
     echo -e "Exit installer!\n"
